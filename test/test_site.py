@@ -3,6 +3,9 @@ import time
 from pages.homepage import HomePage
 from pages.product import ProductPage
 
+import os
+os.environ['HTTP_PROXY'] = 'http://127.0.0.1:10808'
+os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:10808'
 
 
 def test_open_nokia(browser):
