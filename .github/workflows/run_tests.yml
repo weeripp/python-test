@@ -1,5 +1,3 @@
-name: Run autotests
-
 on:
   workflow_dispatch:
     inputs:
@@ -20,10 +18,8 @@ jobs:
       HTTP_PROXY: ""
       HTTPS_PROXY: ""
       ALL_PROXY: ""
-      http_proxy: ""
-      https_proxy: ""
-      all_proxy: ""
       NO_PROXY: "*"
+    
     steps:
       - name: Copy source code
         uses: actions/checkout@v4
